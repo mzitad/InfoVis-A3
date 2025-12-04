@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Globalization Bubble Chart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>FDI and Trade by Year and Continent in % of GDP</h1>
+        <p class="subtitle">Hover your cursor over the bubbles to reveal country-level details and check out bubble sizes to compare their GDP PPP</p>
+
+        <div class="controls">
+            <label>Year: <select id="yearSelect"></select></label>
+            <label>Region: 
+                <select id="regionSelect">
+                    <option value="All">All Regions</option>
+                    <option value="Europe">Europe</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Africa">Africa</option>
+                    <option value="Oceania">Oceania</option>
+                    <option value="North America">North America</option>
+                    <option value="South America">South America</option>
+                </select>
+            </label>
+        </div>
+
+        <div id="chart"></div>
+
+        <div id="legend"></div>
+    </div>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
